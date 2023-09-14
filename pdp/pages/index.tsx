@@ -1,3 +1,4 @@
+import '@/app/globals.css'
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { fetchAllProducts } from '@/components/api';
@@ -6,6 +7,9 @@ import ProductList from '@/components/productList';
 
 const PageContainer = styled.div`
   position: relative;
+  max-width: 92%;
+  margin: auto;
+  padding: 48px 0;;
 `;
 
 const ProductsPage: React.FC = () => {

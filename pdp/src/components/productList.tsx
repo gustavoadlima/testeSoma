@@ -1,23 +1,30 @@
-import React from 'react';
+"use client"
 
-interface Product {
-  productId: number;
-  productName: string;
-}
+import React from 'react';
+import ProductCard from '@/components/productCard';
+import styled from 'styled-components';
+
+export const Gallery = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 32px;
+    @media (min-width: 768px) {
+      row-gap: 52px;
+    }
+`
 
 interface ProductListProps {
-  products: Product[];
+  products: any[];
 }
 
-const ProductList: React.FC<ProductListProps> = ({ products }) => {
+const ProductList: React.FC<ProductListProps> = ({ products}) => {
   return (
-    <div>
-      <ul>
-        {products.map((product) => (
-          <li key={product.productId}>{product.productName}</li>
-        ))}
-      </ul>
-    </div>
+    <Gallery>
+      {products.map((product) => (
+        <ProductCard key={product.productId} product={product} />
+      ))}
+    </Gallery>
   );
 };
 

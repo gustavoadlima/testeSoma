@@ -1,5 +1,8 @@
 :root {
   --cor-1: #3c3c3c;
+  --cor-2: #fafafa;
+  --cor-3: #990000;
+  --branco: #ffffff;
 }
 
 * {
@@ -10,6 +13,5 @@
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+  max-width: 100%;
 }
