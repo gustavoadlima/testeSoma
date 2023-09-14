@@ -62,3 +62,10 @@ export const Id = styled.p`
     margin: 0 auto;
     text-align: center;
 `
+export const Installments = styled.p`
+    text-align: center;
+    color: var(--cor-1);
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+`
