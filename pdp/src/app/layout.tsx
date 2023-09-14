@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description: 'Pagina de produtos',
 }
 
+
 export default function RootLayout({
   children,
 }: {
